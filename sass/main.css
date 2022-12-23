@@ -1473,4 +1473,8 @@ li {
   border-left: 1px solid #eeeeee;
   border-bottom: 1px solid #eeeeee;
   border-right: 1px solid #eeeeee;
+}
+
+.products {
+  background-image: url("../images/Product_480_x1");
 }/*# sourceMappingURL=main.css.map */
