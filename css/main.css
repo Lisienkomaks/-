@@ -77,14 +77,33 @@ li {
   background-image: url("../images/Product_480_x1");
 }
 
+@media screen and (min-width: 768px) {
+  .products__list {
+    gap: 16px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
+}
+
 .products__item {
   border-radius: 24px;
   padding-top: 123px;
-  padding-bottom: 16px;
+  padding-left: 40px;
+  padding-right: 40px;
   position: relative;
   width: 280px;
   height: 420px;
   margin-bottom: 168px;
+}
+@media screen and (min-width: 768px) {
+  .products__item {
+    width: 224px;
+    height: 428px;
+    padding-left: 26px;
+    padding-right: 26px;
+    padding-top: 108px;
+  }
 }
 .products__item-green {
   background-color: #AEC6A5;
@@ -127,16 +146,70 @@ li {
   text-align: center;
   letter-spacing: 0.04em;
   text-transform: uppercase;
+  margin-bottom: 40px;
+}
+
+.products__image-group {
+  width: 200px;
+  height: 200px;
+  margin-left: auto;
+  margin-right: auto;
+  position: absolute;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  left: 50%;
+  top: 0%;
+}
+@media screen and (min-width: 768px) {
+  .products__image-group {
+    top: -5%;
+  }
 }
 
 .products__image {
   border-radius: 50%;
   display: block;
+}
+
+.products__image-shadow {
+  z-index: -1;
+  border-radius: 50%;
+  position: absolute;
   -webkit-transform: translate(-50%, -50%);
           transform: translate(-50%, -50%);
   left: 50%;
-  top: 0%;
-  margin-left: auto;
-  margin-right: auto;
+  top: 55.5%;
+  width: 200px;
+  height: 200px;
+  -webkit-box-shadow: 0px 5.4px 20.3px rgba(0, 0, 0, 0.25);
+          box-shadow: 0px 5.4px 20.3px rgba(0, 0, 0, 0.25);
+}
+
+.products__image-shadow--green {
+  background: #AEC6A5;
+}
+
+.products__image-shadow--yellow {
+  background: #EFD478;
+}
+
+.products__image-shadow--orange {
+  background: #D6936D;
+}
+
+.product__description {
+  text-align: center;
+  letter-spacing: 0.04em;
+}
+
+.products__link {
+  width: 40px;
+  height: 16px;
+  background-color: aqua;
+  z-index: 1;
   position: absolute;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  left: 50%;
+  bottom: 0%;
 }/*# sourceMappingURL=main.css.map */
