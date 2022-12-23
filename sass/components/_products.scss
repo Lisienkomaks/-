@@ -3,3 +3,19 @@
 
     background-image: url('../images/Product_480_x1');
 }
+
+.products__item{
+    
+    width: 280px;
+    height: 420px;
+
+    &-green{
+        background-color: $color-green;
+    }
+    &-yellow{
+        background-color: $color-yellow;
+    }
+    &-orange{
+        background-color: $color-orange;
+    }
+}
